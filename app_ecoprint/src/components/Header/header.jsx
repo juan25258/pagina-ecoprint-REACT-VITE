@@ -24,7 +24,7 @@ export default function header() {
 
           {/* Logo */}
           <a className="navbar-brand mx-auto" href="#">
-            <img src="/ruta/al/logo.png" alt="Logo" height="30" />
+            <img src={"../public/logo.png"} alt="Ecoprintsistemas" height="50" />
           </a>
 
           {/* Opciones de navegación */}

@@ -9,9 +9,12 @@ export default function footer() {
             href="/"
             className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
-            <svg className="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
+            <img
+              src={"../public/logo.png"}
+              alt="Ecoprintsistemas"
+              className="bi"
+              width="25"
+            />
           </a>
           <span className="mb-3 mb-md-0 text-body-secondary">
             © 2023 Company, Inc
@@ -20,24 +23,30 @@ export default function footer() {
 
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li className="ms-3">
-            <a className="text-body-secondary" href="#">
-              <svg className="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
+            <a
+              className="text-success"
+              href="https://wa.me/message/OJHX4ZUHNPZKO1"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>
           <li className="ms-3">
-            <a className="text-body-secondary" href="#">
-              <svg className="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg>
+            <a
+              className="color-instagram"
+              href="https://www.instagram.com/ecoprintsistemas/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li className="ms-3">
-            <a className="text-body-secondary" href="#">
-              <svg className="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
+            <a
+              className="text-primary"
+              href="https://www.facebook.com/ecoprintcontinuos"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
         </ul>

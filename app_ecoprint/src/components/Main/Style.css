@@ -1,0 +1,57 @@
+.botones-hero{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.fw-light{
+    font-family: 'Nunito', sans-serif;
+    font-size: bolder;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    /* Otras reglas de estilo para los encabezados */
+  }
+  
+  .lead, p {
+    font-family: 'Nunito', sans-serif;
+    /* Otras reglas de estilo para párrafos y elementos con clase 'lead' */
+  }
+  
+
+/* algunas letras posibles
+
+Montserrat:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+font-family: 'Montserrat', sans-serif;
+
+Roboto:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+font-family: 'Roboto', sans-serif;
+
+Lato:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+font-family: 'Lato', sans-serif;
+
+Open Sans:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+font-family: 'Open Sans', sans-serif;
+
+Poppins:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+font-family: 'Poppins', sans-serif;
+
+Source Sans Pro:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+font-family: 'Source Sans Pro', sans-serif;
+
+Nunito:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+font-family: 'Nunito', sans-serif; */
