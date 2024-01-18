@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function header() {
+export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -32,12 +32,22 @@ export default function header() {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Opción 1
+                  Inicio
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Opción 2
+                  Nuestros Productos
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Instrutivos
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contacto
                 </a>
               </li>
               {/* Agrega más opciones según sea necesario */}

@@ -5,18 +5,27 @@
 }
 .fw-light{
     font-family: 'Nunito', sans-serif;
-    font-size: bolder;
+    font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.titulo-cards{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito', sans-serif;
-    /* Otras reglas de estilo para los encabezados */
-  }
+  } */
   
   .lead, p {
     font-family: 'Nunito', sans-serif;
-    /* Otras reglas de estilo para párrafos y elementos con clase 'lead' */
+    font-family: 'Nunito', sans-serif;
+    
   }
+  .card-img{
+    height: 15rem;
+  }
+  
   
 
 /* algunas letras posibles

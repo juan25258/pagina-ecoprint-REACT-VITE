@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function footer() {
+export default function Footer() {
   return (
     <>
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -28,7 +28,7 @@ export default function footer() {
               href="https://wa.me/message/OJHX4ZUHNPZKO1"
               target="_blank"
             >
-              <i class="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </li>
           <li className="ms-3">
@@ -37,7 +37,7 @@ export default function footer() {
               href="https://www.instagram.com/ecoprintsistemas/"
               target="_blank"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li className="ms-3">
@@ -46,7 +46,7 @@ export default function footer() {
               href="https://www.facebook.com/ecoprintcontinuos"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </li>
         </ul>
