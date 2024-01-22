@@ -10,7 +10,7 @@ export default function Footer() {
             className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
             <img
-              src={"../public/logo.png"}
+              src={"../logo.png"}
               alt="Ecoprintsistemas"
               className="bi"
               width="25"

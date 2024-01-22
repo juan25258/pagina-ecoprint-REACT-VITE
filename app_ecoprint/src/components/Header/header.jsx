@@ -1,14 +1,11 @@
 import React from "react";
-
+import { Link as LinkHeader } from "react-router-dom";
 
 export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-      
         <div className="container-fluid">
-          
-
           {/* Botón para colapsar opciones en pantallas pequeñas */}
           <button
             className="navbar-toggler"
@@ -24,31 +21,34 @@ export default function Header() {
 
           {/* Logo */}
           <a className="navbar-brand mx-auto" href="#">
-            <img src={"../public/logo.png"} alt="Ecoprintsistemas" height="50" />
+            <img src={"../logo.png"} alt="Ecoprintsistemas" height="50" />
           </a>
 
           {/* Opciones de navegación */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <LinkHeader className="nav-link" to="/">
                   Inicio
-                </a>
+                </LinkHeader>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Nuestros Productos
-                </a>
+                <LinkHeader
+                  className="nav-link"
+                  to="/Productos"
+                >
+                  Productos
+                </LinkHeader>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Instrutivos
-                </a>
+                <LinkHeader className="nav-link" to="/Instructivos">
+                  Instructivos
+                </LinkHeader>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <LinkHeader className="nav-link" to={"/Contacto"}>
                   Contacto
-                </a>
+                </LinkHeader>
               </li>
               {/* Agrega más opciones según sea necesario */}
             </ul>
