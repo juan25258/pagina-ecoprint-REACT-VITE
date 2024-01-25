@@ -1,5 +1,6 @@
 import React from "react";
 import "./inicio.css";
+import { Link as LinkInicio } from "react-router-dom";
 
 export default function Inicio() {
   return (
@@ -24,9 +25,9 @@ export default function Inicio() {
                 <a href="#" className="btn btn-primary my-2">
                   Quienes somos
                 </a>
-                <a href="#" className="btn btn-secondary my-2">
+                <LinkInicio href="#" className="btn btn-secondary my-2" to={"/Contacto"}>
                   Contacto
-                </a>
+                </LinkInicio>
               </p>
             </div>
           </div>

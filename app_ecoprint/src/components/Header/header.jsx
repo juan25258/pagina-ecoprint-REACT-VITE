@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link as LinkHeader } from "react-router-dom";
 
@@ -18,13 +19,9 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
-          {/* Logo */}
           <a className="navbar-brand mx-auto" href="#">
             <img src={"../logo.png"} alt="Ecoprintsistemas" height="50" />
           </a>
-
-          {/* Opciones de navegación */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -50,7 +47,6 @@ export default function Header() {
                   Contacto
                 </LinkHeader>
               </li>
-              {/* Agrega más opciones según sea necesario */}
             </ul>
           </div>
 

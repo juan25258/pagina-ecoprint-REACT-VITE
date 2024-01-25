@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 export default function Footer() {
@@ -27,6 +28,7 @@ export default function Footer() {
               className="text-success"
               href="https://wa.me/message/OJHX4ZUHNPZKO1"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fa-brands fa-whatsapp"></i>
             </a>
@@ -36,6 +38,7 @@ export default function Footer() {
               className="color-instagram"
               href="https://www.instagram.com/ecoprintsistemas/"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fa-brands fa-instagram"></i>
             </a>
@@ -45,6 +48,7 @@ export default function Footer() {
               className="text-primary"
               href="https://www.facebook.com/ecoprintcontinuos"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fa-brands fa-facebook"></i>
             </a>
