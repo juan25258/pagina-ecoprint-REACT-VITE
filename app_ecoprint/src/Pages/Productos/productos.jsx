@@ -27,12 +27,14 @@ export default function Productos() {
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-primary"
-                        >
-                          View
-                        </button>
+                        <LinkTintas to={"/Sistemas"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
                       </div>
                     </div>
                   </div>
@@ -54,14 +56,13 @@ export default function Productos() {
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
-                        <LinkTintas  to={"/Tintas"}>
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-primary"
-                        >
-                          View
-                        </button>
-                        
+                        <LinkTintas to={"/Tintas"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
                         </LinkTintas>
                       </div>
                     </div>
@@ -84,12 +85,14 @@ export default function Productos() {
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-primary"
-                        >
-                          View
-                        </button>
+                        <LinkTintas to={"/ReparacionYMantenimiento"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
                       </div>
                     </div>
                   </div>

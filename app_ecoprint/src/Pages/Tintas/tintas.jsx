@@ -3,6 +3,6 @@ import React from 'react';
 
 export default function Tintas() {
   return (
-    <div>Tintas</div>
+    <h2>Tintas</h2>
   )
 }
