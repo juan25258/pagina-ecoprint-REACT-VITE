@@ -10,7 +10,6 @@ import Tintas from "./Pages/Tintas/tintas";
 import ReparacionYMantenimiento from "./Pages/ReparacionYMantenimiento/ReparacionYMantenimiento";
 import Sistemas from "./Pages/Sistemas/sistemas";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,30 +29,31 @@ const router = createBrowserRouter([
   {
     path: "/Contacto",
     element: <Layout />,
-    children: [{ path: "/Contacto", element: <Contacto />}]
+    children: [{ path: "/Contacto", element: <Contacto /> }],
   },
   {
     path: "/Sistemas",
     element: <Layouts />,
-    children: [{ path: "/Sistemas", element: <Sistemas />}]
+    children: [{ path: "/Sistemas", element: <Sistemas /> }],
   },
   {
     path: "/Tintas",
     element: <Layouts />,
-    children: [{ path: "/Tintas", element: <Tintas />}]
+    children: [{ path: "/Tintas", element: <Tintas /> }],
   },
   {
     path: "/ReparacionYMantenimiento",
     element: <Layouts />,
-    children: [{ path: "/ReparacionYMantenimiento", element: <ReparacionYMantenimiento />}]
-  }
-  
-
-
+    children: [
+      {
+        path: "/ReparacionYMantenimiento",
+        element: <ReparacionYMantenimiento />,
+      },
+    ],
+  },
 ]);
 
 function App() {
-
   return (
     <>
       <RouterProvider router={router}></RouterProvider>
