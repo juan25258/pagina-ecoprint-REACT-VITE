@@ -6,10 +6,8 @@ import Productos from "./Pages/Productos/productos";
 import Instructivos from "./Pages/Instructivos/instructivos";
 import Contacto from "./Pages/Contacto/contacto";
 import Layouts from "./Layouts/layout";
-
 import ReparacionYMantenimiento from "./Pages/ReparacionYMantenimiento/ReparacionYMantenimiento";
 import Sistemas from "./Pages/Sistemas/sistemas";
-
 import TintasEpson from "./components/TintasEpson/tintasEpson";
 import TintasTodas from "./components/TintasTodas/tintasTodas";
 import TintasHP from "./components/TIntasHP/tintasHP";

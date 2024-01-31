@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export default function TintasHP() {
   return (
-    <div>tintas HP</div>
-  )
+    <>
+      <h1>Tintas para impresoras HP</h1>
+    </>
+  );
 }
