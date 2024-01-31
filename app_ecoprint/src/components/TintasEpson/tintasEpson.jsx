@@ -119,6 +119,51 @@ const tintasProData = [
   },
 ];
 
+const tintasSublimarData = [
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-negro-100ml1-296ea3feffe8c4852f16897058032746-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta negra para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-amarillo-100ml1-576f2377bd4d5f811516897058033538-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta amarilla para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-cian-100ml1-b8e846cde1b7005af416897058033837-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta cian para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-cian-claro100ml1-50352bd1d808c0c24816897058035030-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta cian light para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-magenta-100ml1-52e431b1db66bda59f16897058035502-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta magenta para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+  {
+    imgSrc:
+      "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-magenta-claro-100ml1-8633bfc8f9d774d09d16897058036873-640-0.webp",
+    title: "Tintas art-jet linea profesional",
+    description: "tinta magenta light para impresoras epson serie L.",
+    price: "$ 10000",
+  },
+];
+
 export default function TintasEpson() {
   return (
     <>
@@ -146,6 +191,26 @@ export default function TintasEpson() {
         <h2>Linea Profesional</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
           {tintasProData.map((tinta, index) => (
+            <div className="card" style={{ width: "16rem" }} key={index}>
+              <img
+                src={tinta.imgSrc}
+                className="card-img-top"
+                alt={tinta.title}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{tinta.title}</h5>
+                <p className="card-text">{tinta.description}</p>
+                <p className="card-text">{tinta.price}</p>
+                <a href="#" className="btn btn-primary">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <h2>Tintas de sublimación</h2>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
+          {tintasSublimarData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
                 src={tinta.imgSrc}

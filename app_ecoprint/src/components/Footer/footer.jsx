@@ -1,10 +1,9 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import "./footer.css"
 
 export default function Footer() {
   return (
     <>
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mx-4 border-top">
         <div className="col-md-4 d-flex align-items-center">
           <a
             href="/"
@@ -40,7 +39,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li className="ms-3">
