@@ -10,7 +10,7 @@ import ReparacionYMantenimiento from "./Pages/ReparacionYMantenimiento/Reparacio
 import Sistemas from "./Pages/Sistemas/sistemas";
 import TintasEpson from "./components/TintasEpson/tintasEpson";
 import TintasTodas from "./components/TintasTodas/tintasTodas";
-import TintasHP from "./components/TIntasHP/tintasHP";
+import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
 

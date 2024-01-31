@@ -1,7 +1,6 @@
 import "./tintasEpson.css";
 
-
-const tintasData = [
+const tintasEpsonData = [
   {
     imgSrc:
       "https://scontent.fres2-1.fna.fbcdn.net/v/t39.30808-6/405388162_3490021011328292_2666548157252446078_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=rzYqfxdjfykAX-9UmvP&_nc_ht=scontent.fres2-1.fna&oh=00_AfBzrL4cNve1Tg2EdYWV-pP55B-xGNH1Cn_GMgW01aqAVA&oe=65BC2048",
@@ -74,7 +73,7 @@ const tintasData = [
   },
 ];
 
-const tintasProData = [
+const tintasEpsonProData = [
   {
     imgSrc:
       "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-profesional-negra-100ml1-ba933561e7c8b13cfd16897043799335-640-0.webp",
@@ -119,7 +118,7 @@ const tintasProData = [
   },
 ];
 
-const tintasSublimarData = [
+const tintasEpsonSublimarData = [
   {
     imgSrc:
       "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-sublimacion-negro-100ml1-296ea3feffe8c4852f16897058032746-640-0.webp",
@@ -170,7 +169,7 @@ export default function TintasEpson() {
       <section className="container text-center">
         <h2>Tintas Epson linea comercial</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
-          {tintasData.map((tinta, index) => (
+          {tintasEpsonData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
                 src={tinta.imgSrc}
@@ -190,7 +189,7 @@ export default function TintasEpson() {
         </div>
         <h2>Linea Profesional</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
-          {tintasProData.map((tinta, index) => (
+          {tintasEpsonProData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
                 src={tinta.imgSrc}
@@ -210,7 +209,7 @@ export default function TintasEpson() {
         </div>
         <h2>Tintas de sublimación</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
-          {tintasSublimarData.map((tinta, index) => (
+          {tintasEpsonSublimarData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
                 src={tinta.imgSrc}
@@ -227,6 +226,15 @@ export default function TintasEpson() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="whatsapp-button">
+          <a
+            href="https://wa.me/3794926148"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp fa-lg"></i>
+          </a>
         </div>
       </section>
     </>

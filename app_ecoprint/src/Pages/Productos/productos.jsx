@@ -1,6 +1,4 @@
 import "./productos.css";
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import { Link as LinkTintas } from "react-router-dom";
 
 export default function Productos() {
