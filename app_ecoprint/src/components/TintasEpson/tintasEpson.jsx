@@ -167,8 +167,8 @@ export default function TintasEpson() {
   return (
     <>
       <section className="container text-center">
-        <h2>Tintas Epson linea comercial</h2>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
+        <h2>Tintas Epson línea comercial</h2>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center gap-3">
           {tintasEpsonData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
@@ -187,8 +187,8 @@ export default function TintasEpson() {
             </div>
           ))}
         </div>
-        <h2>Linea Profesional</h2>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
+        <h2>Línea Profesional</h2>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center gap-3">
           {tintasEpsonProData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
@@ -208,7 +208,7 @@ export default function TintasEpson() {
           ))}
         </div>
         <h2>Tintas de sublimación</h2>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-flex-start gap-3">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center gap-3">
           {tintasEpsonSublimarData.map((tinta, index) => (
             <div className="card" style={{ width: "16rem" }} key={index}>
               <img
@@ -234,6 +234,7 @@ export default function TintasEpson() {
             rel="noopener noreferrer"
           >
             <i class="fab fa-whatsapp fa-lg"></i>
+            <p>Hablanos!</p>
           </a>
         </div>
       </section>
