@@ -49,8 +49,8 @@ export default function Productos() {
                     <h5 className="card-title">Tintas</h5>
                     <p className="card-text">
                       Tenemos tintas fotográficas para todas las marcas y
-                      modelos de impresoras a inyeccion de tinta. Ademas
-                      contamos con tintas de sublimacion.
+                      modelos de impresoras a inyección de tinta. Ademas
+                      contamos con tintas de sublimación.
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
@@ -75,7 +75,7 @@ export default function Productos() {
                     alt=""
                   />
                   <div className="card-body">
-                    <h5 className="card-title">Reparacion y mantenimiento</h5>
+                    <h5 className="card-title">Reparación y mantenimiento</h5>
                     <p className="card-text">
                       Transformamos sus impresoras a cartuchos para aumentar al
                       máximo el rendimiento de las mismas, reduciendo así el
@@ -84,6 +84,87 @@ export default function Productos() {
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
                         <LinkTintas to={"/ReparacionYMantenimiento"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={"./src/assets/reparaciones.jpg"}
+                    className="card-img"
+                    alt=""
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Tecnología Laser</h5>
+                    <p className="card-text">
+                      Tenemos a la venta impresoras laser Pantum. Ademas ofrecemos chip virtual para estas impresoras (y también para otras marcas), consiguiendo de esta manera reducir al máximo los costos de impresión.
+                    </p>
+                    <div className="d-flex justify-content center align-items-center">
+                      <div className="btn-group">
+                        <LinkTintas to={"/TecnologíaLaser"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={"./src/assets/reparaciones.jpg"}
+                    className="card-img"
+                    alt=""
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Cartuchos</h5>
+                    <p className="card-text">
+                      Tenemos variedad de cartuchos para impresoras a inyección de tinta y también para impresoras laser.
+                    </p>
+                    <div className="d-flex justify-content center align-items-center">
+                      <div className="btn-group">
+                        <LinkTintas to={"/TecnologiaLaser"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={"./src/assets/reparaciones.jpg"}
+                    className="card-img"
+                    alt=""
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Computación</h5>
+                    <p className="card-text">
+                      Le ofrecemos variedad de artículos de computación. Cables, teclados, tarjetas de memoria, adaptadores, etc.
+                    </p>
+                    <div className="d-flex justify-content center align-items-center">
+                      <div className="btn-group">
+                        <LinkTintas to={"/TecnologiaLaser"}>
                           <button
                             type="button"
                             className="btn btn-sm btn-primary"

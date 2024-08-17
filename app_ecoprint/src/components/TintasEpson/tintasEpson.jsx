@@ -1,6 +1,6 @@
 import "./tintasEpson.css";
 
-const tintasEpsonData = [
+/* const tintasEpsonData = [
   {
     imgSrc:
       "https://scontent.fres2-1.fna.fbcdn.net/v/t39.30808-6/405388162_3490021011328292_2666548157252446078_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=rzYqfxdjfykAX-9UmvP&_nc_ht=scontent.fres2-1.fna&oh=00_AfBzrL4cNve1Tg2EdYWV-pP55B-xGNH1Cn_GMgW01aqAVA&oe=65BC2048",
@@ -71,7 +71,150 @@ const tintasEpsonData = [
     description: "tinta magenta para impresoras epson serie L.",
     price: "$ 7000",
   },
+]; */
+const tintasEpsonData = [
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c1",
+    sku: "ARTJET-COM-100-NEGRO",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta negra para impresoras epson serie L.",
+    price: 5000,
+    stock: 50,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta negra", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c2",
+    sku: "ARTJET-COM-100-CIAN",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta cian para impresoras epson serie L.",
+    price: 5000,
+    stock: 45,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta cian", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c3",
+    sku: "ARTJET-COM-100-AMARILLO",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta amarilla para impresoras epson serie L.",
+    price: 5000,
+    stock: 60,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta amarilla", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c4",
+    sku: "ARTJET-COM-100-MAGENTA",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta magenta para impresoras epson serie L.",
+    price: 5000,
+    stock: 30,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta magenta", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c5",
+    sku: "ARTJET-COM-100-CIAN-LIGHT",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta cian light para impresoras epson serie L.",
+    price: 5000,
+    stock: 40,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta cian light", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c6",
+    sku: "ARTJET-COM-100-MAGENTA-LIGHT",
+    category: "comercial",
+    imgSrc: "",
+    title: "Tintas art-jet 100 mL",
+    description: "tinta magenta light para impresoras epson serie L.",
+    price: 5000,
+    stock: 35,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta magenta light", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c7",
+    sku: "ARTJET-COM-150-NEGRO",
+    category: "comercial",
+    imgSrc: "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-comercial-negro-150ml1-56a8cb012279c4d0ae16897053486997-640-0.webp",
+    title: "Tintas art-jet 150 mL",
+    description: "tinta negra para impresoras epson serie L.",
+    price: 7500,
+    stock: 20,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta negra", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c8",
+    sku: "ARTJET-COM-150-CIAN",
+    category: "comercial",
+    imgSrc: "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-comercial-cian-150ml1-3a6a98b59851c9e9cf16897053488738-1024-1024.webp",
+    title: "Tintas art-jet 150 mL",
+    description: "tinta cian para impresoras epson serie L.",
+    price: 7500,
+    stock: 18,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta cian", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8c9",
+    sku: "ARTJET-COM-150-AMARILLO",
+    category: "comercial",
+    imgSrc: "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-comercial-amarillo-150ml1-af4ee76ab920b1a5da16897053487435-1024-1024.webp",
+    title: "Tintas art-jet 150 mL",
+    description: "tinta amarilla para impresoras epson serie L.",
+    price: 7500,
+    stock: 22,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta amarilla", "L-series"]
+  },
+  {
+    _id: "64bff9fbd78b4c2a3d6e2b8d0",
+    sku: "ARTJET-COM-150-MAGENTA",
+    category: "comercial",
+    imgSrc: "https://acdn.mitiendanube.com/stores/001/796/172/products/tinta-comercial-magenta-150ml1-db3ddba71c4145275416897053487894-1024-1024.webp",
+    title: "Tintas art-jet 150 mL",
+    description: "tinta magenta para impresoras epson serie L.",
+    price: 7500,
+    stock: 15,
+    createdAt: "2024-08-10T14:48:00Z",
+    updatedAt: "2024-08-10T14:48:00Z",
+    discount: 0,
+    tags: ["epson", "tinta magenta", "L-series"]
+  }
 ];
+
 
 const tintasEpsonProData = [
   {

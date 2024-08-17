@@ -13,6 +13,8 @@ import TintasTodas from "./components/TintasTodas/tintasTodas";
 import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
+import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
+
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,16 @@ const router = createBrowserRouter([
       {
         path: "/ReparacionYMantenimiento",
         element: <ReparacionYMantenimiento />,
+      },
+    ],
+  },
+  {
+    path: "/TecnologiaLaser",
+    element: <Layouts />,
+    children: [
+      {
+        path: "/TecnologiaLaser",
+        element: <TecnologiaLaser />,
       },
     ],
   },
