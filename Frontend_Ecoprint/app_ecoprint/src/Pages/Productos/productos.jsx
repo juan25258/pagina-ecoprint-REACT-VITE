@@ -99,7 +99,7 @@ export default function Productos() {
               <div className="col">
                 <div className="card shadow-sm h-100">
                   <img
-                    src={"./src/assets/reparaciones.jpg"}
+                    src={"./src/assets/pantum.jpg"}
                     className="card-img"
                     alt=""
                   />
@@ -110,7 +110,7 @@ export default function Productos() {
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">
-                        <LinkTintas to={"/TecnologíaLaser"}>
+                        <LinkTintas to={"/TecnologiaLaser"}>
                           <button
                             type="button"
                             className="btn btn-sm btn-primary"
@@ -126,7 +126,7 @@ export default function Productos() {
               <div className="col">
                 <div className="card shadow-sm h-100">
                   <img
-                    src={"./src/assets/reparaciones.jpg"}
+                    src={"./src/assets/cartuchosytoners.jpg"}
                     className="card-img"
                     alt=""
                   />
@@ -153,7 +153,7 @@ export default function Productos() {
               <div className="col">
                 <div className="card shadow-sm h-100">
                   <img
-                    src={"./src/assets/reparaciones.jpg"}
+                    src={"./src/assets/computacion.jpg"}
                     className="card-img"
                     alt=""
                   />

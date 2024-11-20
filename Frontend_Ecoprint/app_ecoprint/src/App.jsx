@@ -14,6 +14,7 @@ import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
 import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
+import CheckoutForm from "./Pages/CheckoutForm/CheckoutForm";
 
 
 const router = createBrowserRouter([
@@ -86,6 +87,11 @@ const router = createBrowserRouter([
     path: "/TintasBrother",
     element: <Layouts />,
     children: [{ path: "/TintasBrother", element: <TintasBrother /> }],
+  },
+  {
+    path: "/checkout",
+    element: <Layouts />,
+    children: [{ path: "/checkout", element: <CheckoutForm /> }],
   },
 ]);
 
