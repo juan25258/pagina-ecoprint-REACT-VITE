@@ -14,8 +14,9 @@ import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
 import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
-import CheckoutForm from "./Pages/CheckoutForm/CheckoutForm";
-
+import CheckoutForm from "./Pages/CheckoutForm/checkoutForm";
+import { CartProvider } from "./cartContext";
+import Cart from "./components/Cart/cart";
 
 const router = createBrowserRouter([
   {
@@ -89,16 +90,23 @@ const router = createBrowserRouter([
     children: [{ path: "/TintasBrother", element: <TintasBrother /> }],
   },
   {
-    path: "/checkout",
+    path: "/Checkout",
     element: <Layouts />,
-    children: [{ path: "/checkout", element: <CheckoutForm /> }],
+    children: [{ path: "/Checkout", element: <CheckoutForm /> }],
+  },
+  {
+    path: "/Cart",
+    element: <Layouts />,
+    children: [{ path: "/Cart", element: <Cart /> }],
   },
 ]);
 
 function App() {
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <CartProvider> {/* envolver toda la app con CartProvider para que este disponible el cart en todos lados */}
+        <RouterProvider router={router}></RouterProvider>
+      </CartProvider>
     </>
   );
 }

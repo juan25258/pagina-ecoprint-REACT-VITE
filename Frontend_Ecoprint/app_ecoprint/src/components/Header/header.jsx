@@ -1,8 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link as LinkHeader } from "react-router-dom";
+import { useCart } from "../../cartContext.jsx";
 
 export default function Header() {
+  const { cart } = useCart();
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -52,13 +55,15 @@ export default function Header() {
 
           {/* Botones de registro y acceso */}
           <div className="d-flex">
+            <LinkHeader to={"/cart"}>
             <button className="btn btn-outline-primary me-2">
-              Registrarse
+              Cart ({cart.length})
             </button>
+            </LinkHeader>
             <button className="btn btn-primary">Acceder</button>
           </div>
         </div>
       </nav>
     </>
-  );
+  );                       
 }
