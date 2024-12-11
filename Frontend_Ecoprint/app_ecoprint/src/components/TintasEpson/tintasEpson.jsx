@@ -1,7 +1,9 @@
 import React from "react";
 import { useCart } from "../../cartContext.jsx";
+import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import "./tintasEpson.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 /* const tintasEpsonData = [
   {
@@ -314,7 +316,8 @@ const tintasEpsonSublimarData = [
 
 export default function TintasEpson() {
   const { addToCart } = useCart();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
+  
 
   const handleAddToCart = (tinta) => {
     if (!tinta.id) {
@@ -322,12 +325,12 @@ export default function TintasEpson() {
       return;
     }
     addToCart(tinta);
-    navigate("/Cart"); // Redirige a la página del carrito
-  }
+    //navigate("/Cart"); // Redirige a la página del carrito
+    toast.success("Producto añadido al carrito");
+  };
 
   return (
     <section className="container text-center">
-      
       <h2>Tintas Epson línea comercial</h2>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center gap-3">
         
@@ -348,7 +351,6 @@ export default function TintasEpson() {
                 className="btn btn-primary"
                 onClick={() => handleAddToCart(tinta)}
               >
-                
                 Agregar al carrito
               </button>
             </div>
@@ -420,6 +422,7 @@ export default function TintasEpson() {
           <i className="fab fa-whatsapp fa-lg"></i> <p>Hablanos!</p>
         </a>
       </div>
+      <ToastContainer />
     </section>
   );
 }
