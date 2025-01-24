@@ -346,7 +346,7 @@ export default function TintasEpson() {
               
               <h5 className="card-title">{tinta.title}</h5>
               <p className="card-text">{tinta.description}</p>
-              <p className="card-text">{tinta.price}</p>
+              <p className="card-text">{"$"+ tinta.price}</p>
               <button
                 className="btn btn-primary"
                 onClick={() => handleAddToCart(tinta)}
@@ -419,10 +419,10 @@ export default function TintasEpson() {
           rel="noopener noreferrer"
         >
           
-          <i className="fab fa-whatsapp fa-lg"></i> <p>Hablanos!</p>
+          <i className="fab fa-whatsapp fa-lg"></i> <p>Contáctenos!</p>
         </a>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-center"/>
     </section>
   );
 }

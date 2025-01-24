@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const CheckoutForm = () => {
+  const location = useLocation();
+  const totalAmount = location.state?.total ?? 0; // Obtener el monto total del estado
+
   const [cardData, setCardData] = useState({
     card_number: '',
     expiration_month: '',
@@ -10,7 +14,7 @@ const CheckoutForm = () => {
   });
 
   const [token, setToken] = useState(null);
-  const [amount, setAmount] = useState(1000); // Monto del pago (puedes cambiarlo dinámicamente)
+  const [amount, setAmount] = useState(totalAmount); // Monto del pago (puedes cambiarlo dinámicamente)
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
