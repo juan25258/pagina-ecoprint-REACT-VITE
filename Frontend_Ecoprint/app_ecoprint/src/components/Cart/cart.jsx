@@ -20,7 +20,7 @@ const Cart = () => {
 
     try {
       // Enviar los datos del carrito al backend
-      const response = await fetch("http://tudominio.com/create-preference", {
+      const response = await fetch("http://localhost:3001/api/mercadopago/create_preference", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,6 +31,10 @@ const Cart = () => {
             unit_price: parseFloat(item.price),
             quantity: item.quantity,
           })),
+          payer: {
+            name: "Nombre del Cliente", // Puedes obtener esto de un formulario o contexto
+            email: "cliente@example.com", // Puedes obtener esto de un formulario o contexto
+          },
         }),
       });
 
@@ -41,7 +45,7 @@ const Cart = () => {
       const data = await response.json();
 
       // Redirigir al usuario al Checkout Pro de MercadoPago
-      window.location.href = `https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=${data.id}`;
+      window.location.href = `https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=${data.id}`;
     } catch (error) {
       console.error(error);
       alert("Error al procesar el pago");

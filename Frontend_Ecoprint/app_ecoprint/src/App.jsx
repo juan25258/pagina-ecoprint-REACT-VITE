@@ -14,7 +14,7 @@ import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
 import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
-import CheckoutForm from "./Pages/CheckoutForm/checkoutForm";
+//import CheckoutForm from "./Pages/CheckoutForm/checkoutForm";
 import { CartProvider } from "./cartContext";
 import Cart from "./components/Cart/cart";
 
@@ -89,11 +89,11 @@ const router = createBrowserRouter([
     element: <Layouts />,
     children: [{ path: "/TintasBrother", element: <TintasBrother /> }],
   },
-  {
+/*   {
     path: "/Checkout",
     element: <Layouts />,
     children: [{ path: "/Checkout", element: <CheckoutForm /> }],
-  },
+  }, */
   {
     path: "/Cart",
     element: <Layouts />,
