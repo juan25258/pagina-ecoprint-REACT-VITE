@@ -67,6 +67,35 @@ export default function Productos() {
                   </div>
                 </div>
               </div>
+
+              <div className="col">
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={"./src/assets/chip-virtual-epson.png"}
+                    className="card-img"
+                    alt=""
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Chip virtual/Chipless</h5>
+                    <p className="card-text">
+                      Tenemos chipless (también llamados chips virtuales) para transformar a su impresora a sin chip!! Tendrá los niveles de tinta al 100% siempre.
+                    </p>
+                    <div className="d-flex justify-content center align-items-center">
+                      <div className="btn-group">
+                        <LinkTintas to={"/ChipsVirtuales"}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Ver más
+                          </button>
+                        </LinkTintas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="col">
                 <div className="card shadow-sm h-100">
                   <img
@@ -133,7 +162,7 @@ export default function Productos() {
                   <div className="card-body">
                     <h5 className="card-title">Cartuchos</h5>
                     <p className="card-text">
-                      Tenemos variedad de cartuchos para impresoras a inyección de tinta y también para impresoras laser.
+                      Tenemos variedad de cartuchos para impresoras a inyección de tinta y también para impresoras laser Pantum, Brother, HP y Samsung.
                     </p>
                     <div className="d-flex justify-content center align-items-center">
                       <div className="btn-group">

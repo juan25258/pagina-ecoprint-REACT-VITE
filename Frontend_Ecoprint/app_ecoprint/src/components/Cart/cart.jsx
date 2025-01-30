@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from "../../cartContext.jsx";
 import { useNavigate } from 'react-router-dom';
+import "./cart.css";
 
 const Cart = () => {
   const { cart, removeFromCart, clearCart, incrementQuantity, decrementQuantity } = useCart();
@@ -55,7 +56,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div className='cart'>
       <h2>Carrito de Compras</h2>
       {cart.length === 0 ? (
         <p>El carrito está vacío</p>

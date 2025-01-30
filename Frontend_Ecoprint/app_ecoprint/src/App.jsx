@@ -20,6 +20,8 @@ import Success from "./Pages/Success/Success";
 import Failure from "./Pages/Failure/Failure";
 import Pending from "./Pages/Pending/Pending";
 
+import ChipsVirtuales from "./Pages/ChipsVirtuales/chipsVirtuales";
+
 
 const router = createBrowserRouter([
   {
@@ -51,6 +53,11 @@ const router = createBrowserRouter([
     path: "/Tintas",
     element: <Layouts />,
     children: [{ path: "/Tintas", element: <TintasTodas /> }],
+  },
+  {
+    path: "/ChipsVirtuales",
+    element: <Layouts />,
+    children: [{ path: "/ChipsVirtuales", element: <ChipsVirtuales /> }],
   },
   {
     path: "/ReparacionYMantenimiento",
