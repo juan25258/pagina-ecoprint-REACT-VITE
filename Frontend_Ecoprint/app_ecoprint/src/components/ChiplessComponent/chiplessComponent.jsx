@@ -12,8 +12,9 @@ const chiplessVersions = [
     title: "Chip virtual para Epson xp2101",
     description:
       "chip virtual +los softwares necesarios + videos tutoriales.",
-    price: "$ 65000",
-    priceUSD: "USD 35",
+    price: 65000,
+    priceUSD: 35,
+    stock: 15,
   },
   { 
     id: "64bff9fbd78b4cdsajkbdaf651",
@@ -23,8 +24,9 @@ const chiplessVersions = [
       "Chip virtual para Epson XP-2100",
     description:
       "chip virtual +los softwares necesarios + videos tutoriales.",
-    price: "$ 65000",
-    priceUSD: "USD 35",
+    price: 65000,
+    priceUSD: 35,
+    stock: 15,
   },
   { 
     id: "64bff9fbd78b4c2a3d6e2sad8754f",
@@ -33,8 +35,9 @@ const chiplessVersions = [
     title: "Chip virtual para Epson xp2101",
     description:
       "chip virtual +los softwares necesarios + videos tutoriales.",
-    price: "$ 5000",
-    priceUSD: "USD 35",
+    price: 65000,
+    priceUSD: 35,
+    stock: 15,
   },
   { 
     id: "64bff9fbd78b4c2a3d6e31fgh",
@@ -43,8 +46,9 @@ const chiplessVersions = [
     title: "Chip virtual para Epson xp2101",
     description:
       "chip virtual +los softwares necesarios + videos tutoriales.",
-    price: "$ 5000",
-    priceUSD: "USD 35",
+    price: 65000,
+    priceUSD: 35,
+    stock: 15,
   },
 ];
 
@@ -78,8 +82,8 @@ export default function ChiplessComponent() {
               <div className="card-body">
                 <h5 className="card-title">{chipless.title}</h5>
                 <p className="card-text">{chipless.description}</p>
-                <p className="card-text">{chipless.price}</p>
-                <p className="card-text">{chipless.priceUSD}</p>
+                <p className="card-text">{"$"+ chipless.price}</p>
+                {/* <p className="card-text">{"USD"+ chipless.priceUSD}</p> */}
                 <button
                 className="btn btn-primary"
                 onClick={() => handleAddToCart(chipless)}
@@ -90,6 +94,17 @@ export default function ChiplessComponent() {
             </div>
           ))}
         </div>
+        <div className="whatsapp-button">
+        
+        <a
+          href="https://wa.me/3794926148"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          
+          <i className="fab fa-whatsapp fa-lg"></i> <p>Contáctenos!</p>
+        </a>
+      </div>
         <ToastContainer position="top-center"/>
       </section>
     </>
