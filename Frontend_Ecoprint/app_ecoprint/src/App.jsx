@@ -14,9 +14,14 @@ import TintasHP from "./components/TIntasHP/tintasHp";
 import TintasCanon from "./components/TintasCanon/tintasCanon";
 import TintasBrother from "./components/TintasBrother/tintasBrother";
 import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
-import CheckoutForm from "./Pages/CheckoutForm/checkoutForm";
 import { CartProvider } from "./cartContext";
 import Cart from "./components/Cart/cart";
+import Success from "./Pages/Success/Success";
+import Failure from "./Pages/Failure/Failure";
+import Pending from "./Pages/Pending/Pending";
+
+import ChipsVirtuales from "./Pages/ChipsVirtuales/chipsVirtuales";
+
 
 const router = createBrowserRouter([
   {
@@ -48,6 +53,11 @@ const router = createBrowserRouter([
     path: "/Tintas",
     element: <Layouts />,
     children: [{ path: "/Tintas", element: <TintasTodas /> }],
+  },
+  {
+    path: "/ChipsVirtuales",
+    element: <Layouts />,
+    children: [{ path: "/ChipsVirtuales", element: <ChipsVirtuales /> }],
   },
   {
     path: "/ReparacionYMantenimiento",
@@ -90,15 +100,23 @@ const router = createBrowserRouter([
     children: [{ path: "/TintasBrother", element: <TintasBrother /> }],
   },
   {
-    path: "/Checkout",
-    element: <Layouts />,
-    children: [{ path: "/Checkout", element: <CheckoutForm /> }],
-  },
-  {
     path: "/Cart",
     element: <Layouts />,
     children: [{ path: "/Cart", element: <Cart /> }],
   },
+  {path: "/Success",
+    element: <Layout />,
+    children: [{ path: "/Success", element: <Success/> }],
+  },
+  {path: "/Failure",
+    element: <Layout />,
+    children: [{ path: "/Failure", element: <Failure/> }],
+  },
+  {path: "/Pending",
+    element: <Layout />,
+    children: [{ path: "/Pending", element: <Pending/> }],
+  }
+
 ]);
 
 function App() {
