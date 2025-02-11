@@ -39,7 +39,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li className="ms-3">
