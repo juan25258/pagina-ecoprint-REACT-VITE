@@ -42,7 +42,7 @@ const chiplessVersions = [
     id: "64bff9fbd78b4c2a3d6e31fgh",
     imgSrc:
       "../../src/assets/chipless-xp241.jpeg",
-    title: "XP-240, XP-241, XP-243",
+    title: "Chip virtual para Epson XP-240, XP-241, XP-243" ,
     description:
       "chip virtual + los software necesarios + videos tutoriales.",
     price: 65000,

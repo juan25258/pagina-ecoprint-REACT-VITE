@@ -123,28 +123,28 @@ const Cart = () => {
           <ul>
             {cart.map((item, index) => (
               <li key={index}>
-                <div>
+                <div className="d-flex justify-content-between">
                   {item.title} - {"$ " + item.price}/{"USD " + item.priceUSD} -{" "}
-                  {item.color} x {item.quantity}
+                  <div className="fw-bold">{item.color} x {item.quantity}</div>
                 </div>
                 <div className="button-menos-mas">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     onClick={() => decrementQuantity(item.id)}
                   >
                     -
                   </button>{" "}
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     onClick={() => incrementQuantity(item.id)}
                   >
                     +
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     onClick={() => removeFromCart(item.id)}
                   >
                     Eliminar
@@ -157,7 +157,7 @@ const Cart = () => {
             <h3>Total: $ {getTotal().toFixed(2)}</h3>{" "}
             <h3>Total: USD {getTotalUSD().toFixed(2)}</h3>{" "}
             {/* Mostrar el total del carrito */}
-            <button type="button" class="btn btn-dark" onClick={clearCart}>
+            <button type="button" className="btn btn-dark" onClick={clearCart}>
               Vaciar Carrito
             </button>
           </div>
@@ -168,7 +168,7 @@ const Cart = () => {
         <div>
           <button
             type="button"
-            class="btn btn-success"
+            className="btn btn-success"
             onClick={handleProceedToPayment}
             disabled={loading || cart.length === 0}
           >
@@ -179,7 +179,7 @@ const Cart = () => {
         <div>
           <button
             type="button"
-            class="btn btn-success"
+            className="btn btn-success"
             onClick={handleProceedToPaymentPaypal}
             disabled={loading || cart.length === 0}
           >
