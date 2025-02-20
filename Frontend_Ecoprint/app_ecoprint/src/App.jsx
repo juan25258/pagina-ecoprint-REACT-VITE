@@ -16,9 +16,9 @@ import TintasBrother from "./components/TintasBrother/tintasBrother";
 import TecnologiaLaser from "./Pages/TecnologiaLaser/tecnologiaLaser";
 import { CartProvider } from "./cartContext";
 import Cart from "./components/Cart/cart";
-import Success from "./Pages/Success/Success";
-import Failure from "./Pages/Failure/Failure";
-import Pending from "./Pages/Pending/Pending";
+import Success from "./Pages/Success/success";
+import Failure from "./Pages/Failure/failure";
+import Pending from "./Pages/Pending/pending";
 
 import ChipsVirtuales from "./Pages/ChipsVirtuales/chipsVirtuales";
 

@@ -5,3 +5,12 @@ div.cart {
     align-items: center;
     min-height: 80vh;
 }
+
+div.button-menos-mas{
+    display: flex;
+    gap: 1rem;
+}
+
+div.button-total{
+    margin: 5%;
+}

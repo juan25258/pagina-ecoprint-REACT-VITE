@@ -23,6 +23,14 @@ const Cart = () => {
     );
   };
 
+  const getTotalUSD = () => {
+    return cart.reduce(
+      (accumulator, item) =>
+        accumulator + parseFloat(item.priceUSD) * item.quantity,
+      0
+    );
+  };
+
   // Función para manejar el proceso de pago
   const handleProceedToPayment = async () => {
     if (cart.length === 0) return; // Si el carrito está vacío, no hacer nada
@@ -83,18 +91,18 @@ const Cart = () => {
           body: JSON.stringify({
             items: cart.map((item) => ({
               title: item.title, // Cambiado de name a title
-              unit_price: parseFloat(item.price), // Campo corregido
+              unit_price: parseFloat(item.priceUSD), // Campo corregido
               quantity: item.quantity,
             })),
           }),
         }
       );
-  
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || "Error al crear la orden de PayPal");
       }
-  
+
       const data = await response.json();
       window.location.href = data.approvalUrl;
     } catch (error) {
@@ -104,7 +112,6 @@ const Cart = () => {
       setLoading(false);
     }
   };
-
 
   return (
     <div className="cart">
@@ -116,38 +123,70 @@ const Cart = () => {
           <ul>
             {cart.map((item, index) => (
               <li key={index}>
-                {item.title} - {"$ " + item.unit_price} x {item.quantity}
-                <button onClick={() => decrementQuantity(item.id)}>
-                  -
-                </button>{" "}
-                <button onClick={() => incrementQuantity(item.id)}>+</button>
-                <button onClick={() => removeFromCart(item.id)}>
-                  Eliminar
-                </button>
+                <div>
+                  {item.title} - {"$ " + item.price}/{"USD " + item.priceUSD} -{" "}
+                  {item.color} x {item.quantity}
+                </div>
+                <div className="button-menos-mas">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onClick={() => decrementQuantity(item.id)}
+                  >
+                    -
+                  </button>{" "}
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onClick={() => incrementQuantity(item.id)}
+                  >
+                    +
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onClick={() => removeFromCart(item.id)}
+                  >
+                    Eliminar
+                  </button>
+                </div>
               </li>
             ))}
           </ul>
-          <h3>Total: ${getTotal().toFixed(2)}</h3>{" "}
-          {/* Mostrar el total del carrito */}
-          <button onClick={clearCart}>Vaciar Carrito</button>
+          <div className="button-total">
+            <h3>Total: $ {getTotal().toFixed(2)}</h3>{" "}
+            <h3>Total: USD {getTotalUSD().toFixed(2)}</h3>{" "}
+            {/* Mostrar el total del carrito */}
+            <button type="button" class="btn btn-dark" onClick={clearCart}>
+              Vaciar Carrito
+            </button>
+          </div>
         </>
       )}
       {/* Botón "Proceder al Pago" */}
       <div>
-        <button
-          onClick={handleProceedToPayment}
-          disabled={loading || cart.length === 0}
-        >
-          {loading ? "Procesando..." : "Proceder al Pago"}
-        </button>
-        Para clientes de Argentina
-      </div>
-      <div>
-        <button onClick={handleProceedToPaymentPaypal} 
-        disabled={loading || cart.length === 0}>
-          {loading ? "Procesando..." : "pagar con Paypal"}
-        </button>
-        Si Ud. no es de Argentina, usar Paypal.
+        <div>
+          <button
+            type="button"
+            class="btn btn-success"
+            onClick={handleProceedToPayment}
+            disabled={loading || cart.length === 0}
+          >
+            {loading ? "Procesando..." : "Proceder al Pago"}
+          </button>
+          <p>Para clientes de Argentina</p>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-success"
+            onClick={handleProceedToPaymentPaypal}
+            disabled={loading || cart.length === 0}
+          >
+            {loading ? "Procesando..." : "pagar con Paypal"}
+          </button>
+          <p>Si Ud. no es de Argentina, usar Paypal.</p>
+        </div>
       </div>
     </div>
   );
