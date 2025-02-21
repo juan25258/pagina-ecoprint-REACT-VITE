@@ -1,16 +1,32 @@
 div.cart {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 80vh;
 }
 
-div.button-menos-mas{
-    display: flex;
-    gap: 1rem;
+div.button-menos-mas {
+  display: flex;
+  gap: 1rem;
 }
 
-div.button-total{
-    margin: 5%;
+div.button-total {
+  display: flex;
+  margin: 2%;
+  padding: 1rem;
+  width: 40%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  align-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
 }

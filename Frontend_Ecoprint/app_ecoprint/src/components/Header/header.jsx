@@ -33,10 +33,7 @@ export default function Header() {
                 </LinkHeader>
               </li>
               <li className="nav-item">
-                <LinkHeader
-                  className="nav-link"
-                  to="/Productos"
-                >
+                <LinkHeader className="nav-link" to="/Productos">
                   Productos
                 </LinkHeader>
               </li>
@@ -56,14 +53,14 @@ export default function Header() {
           {/* Botones de registro y acceso */}
           <div className="d-flex">
             <LinkHeader to={"/cart"}>
-            <button className="btn btn-outline-primary me-2">
-              Cart ({cart.length})
-            </button>
+              <button className="btn btn-outline-primary me-2">
+                <i class="fa-solid fa-cart-shopping"></i>({cart.length})
+              </button>
             </LinkHeader>
             <button className="btn btn-primary">Acceder</button>
           </div>
         </div>
       </nav>
     </>
-  );                       
+  );
 }

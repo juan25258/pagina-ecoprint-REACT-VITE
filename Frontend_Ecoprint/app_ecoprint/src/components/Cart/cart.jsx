@@ -114,81 +114,97 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart">
-      <h2>Carrito de Compras</h2>
-      {cart.length === 0 ? (
-        <p>El carrito está vacío</p>
-      ) : (
-        <>
-          <ul>
-            {cart.map((item, index) => (
-              <li key={index}>
-                <div className="d-flex justify-content-between">
-                  {item.title} - {"$ " + item.price}/{"USD " + item.priceUSD} -{" "}
-                  <div className="fw-bold">{item.color} x {item.quantity}</div>
-                </div>
-                <div className="button-menos-mas">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    onClick={() => decrementQuantity(item.id)}
+    <>
+      <span>
+        <h2>Carrito de Compras</h2>
+      </span>
+      <div className="cart group">
+        {cart.length === 0 ? (
+          <p>El carrito está vacío</p>
+        ) : (
+          <>
+            <div className="d-flex justify-content-around">
+              <ul>
+                {cart.map((item, index) => (
+                  <li
+                    key={index}
+                    className="border border-primary rounded m-1 p-1"
                   >
-                    -
-                  </button>{" "}
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    onClick={() => incrementQuantity(item.id)}
-                  >
-                    +
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    onClick={() => removeFromCart(item.id)}
-                  >
-                    Eliminar
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div className="button-total">
-            <h3>Total: $ {getTotal().toFixed(2)}</h3>{" "}
-            <h3>Total: USD {getTotalUSD().toFixed(2)}</h3>{" "}
-            {/* Mostrar el total del carrito */}
-            <button type="button" className="btn btn-dark" onClick={clearCart}>
-              Vaciar Carrito
+                    <div className="d-flex justify-content-between">
+                      {item.title} - {"$ " + item.price}/
+                      {"USD " + item.priceUSD} -{" "}
+                      <div className="fw-bold">
+                        {item.color} x {item.quantity}
+                      </div>
+                    </div>
+                    <div className="button-menos-mas">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => decrementQuantity(item.id)}
+                      >
+                        -
+                      </button>{" "}
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => incrementQuantity(item.id)}
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => removeFromCart(item.id)}
+                      >
+                        Eliminar
+                      </button>
+                    </div>
+                  </li>
+                ))}
+                <button
+                  type="button"
+                  className="btn btn-dark"
+                  onClick={clearCart}
+                >
+                  Vaciar Carrito
+                </button>
+              </ul>
+              <div className="button-total border rounded bg-primary bg-opacity-75">
+                <h4>Total: $ {getTotal().toFixed(2)}</h4>{" "}
+                <h4>Total: USD {getTotalUSD().toFixed(2)}</h4>{" "}
+                {/* Mostrar el total del carrito */}
+              </div>
+            </div>
+          </>
+        )}
+        {/* Botón "Proceder al Pago" */}
+        <div>
+          <div>
+            <button
+              type="button"
+              className="btn btn-success"
+              onClick={handleProceedToPayment}
+              disabled={loading || cart.length === 0}
+            >
+              {loading ? "Procesando..." : "Proceder al Pago"}
             </button>
+            <p>Para clientes de Argentina</p>
           </div>
-        </>
-      )}
-      {/* Botón "Proceder al Pago" */}
-      <div>
-        <div>
-          <button
-            type="button"
-            className="btn btn-success"
-            onClick={handleProceedToPayment}
-            disabled={loading || cart.length === 0}
-          >
-            {loading ? "Procesando..." : "Proceder al Pago"}
-          </button>
-          <p>Para clientes de Argentina</p>
-        </div>
-        <div>
-          <button
-            type="button"
-            className="btn btn-success"
-            onClick={handleProceedToPaymentPaypal}
-            disabled={loading || cart.length === 0}
-          >
-            {loading ? "Procesando..." : "pagar con Paypal"}
-          </button>
-          <p>Si Ud. no es de Argentina, usar Paypal.</p>
+          <div>
+            <button
+              type="button"
+              className="btn btn-success"
+              onClick={handleProceedToPaymentPaypal}
+              disabled={loading || cart.length === 0}
+            >
+              {loading ? "Procesando..." : "pagar con Paypal"}
+            </button>
+            <p>Si Ud. no es de Argentina, usar Paypal.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
