@@ -123,7 +123,7 @@ const Cart = () => {
           <p>El carrito está vacío</p>
         ) : (
           <>
-            <div className="d-flex justify-content-around">
+            <div className="itemsCart">
               <ul>
                 {cart.map((item, index) => (
                   <li
@@ -179,8 +179,8 @@ const Cart = () => {
           </>
         )}
         {/* Botón "Proceder al Pago" */}
-        <div>
-          <div>
+        <div className="buttonsPay">
+          <div className="buttonMercadopago">
             <button
               type="button"
               className="btn btn-success"
@@ -191,7 +191,7 @@ const Cart = () => {
             </button>
             <p>Para clientes de Argentina</p>
           </div>
-          <div>
+          <div className="buttonPaypal">
             <button
               type="button"
               className="btn btn-success"

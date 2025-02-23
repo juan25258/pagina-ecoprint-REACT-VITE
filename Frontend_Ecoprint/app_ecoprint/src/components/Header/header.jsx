@@ -2,6 +2,7 @@
 import React from "react";
 import { Link as LinkHeader } from "react-router-dom";
 import { useCart } from "../../cartContext.jsx";
+import "./header.css"
 
 export default function Header() {
   const { cart } = useCart();
@@ -28,22 +29,22 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <LinkHeader className="nav-link" to="/">
+                <LinkHeader className="buttonStart nav-link" to="/">
                   Inicio
                 </LinkHeader>
               </li>
               <li className="nav-item">
-                <LinkHeader className="nav-link" to="/Productos">
+                <LinkHeader className="buttonProducts nav-link" to="/Productos">
                   Productos
                 </LinkHeader>
               </li>
               <li className="nav-item">
-                <LinkHeader className="nav-link" to="/Instructivos">
+                <LinkHeader className="buttonInstructions nav-link" to="/Instructivos">
                   Instructivos
                 </LinkHeader>
               </li>
               <li className="nav-item">
-                <LinkHeader className="nav-link" to={"/Contacto"}>
+                <LinkHeader className="buttonContact nav-link" to={"/Contacto"}>
                   Contacto
                 </LinkHeader>
               </li>
@@ -53,11 +54,11 @@ export default function Header() {
           {/* Botones de registro y acceso */}
           <div className="d-flex">
             <LinkHeader to={"/cart"}>
-              <button className="btn btn-outline-primary me-2">
+              <button className="buttonCart btn btn-outline-primary me-2">
                 <i class="fa-solid fa-cart-shopping"></i>({cart.length})
               </button>
             </LinkHeader>
-            <button className="btn btn-primary">Acceder</button>
+            
           </div>
         </div>
       </nav>

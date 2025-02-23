@@ -30,3 +30,29 @@ ul {
 h2 {
   text-align: center;
 }
+
+.itemsCart{
+  
+    display: flex;
+    flex: wrap;
+    @media (width <= 540px) {
+      display: contents;
+    }
+}
+
+.buttonsPay {
+  display: flex
+;
+    margin: 5%;
+    padding: 5%;
+    gap: 5rem;
+    width: 100vw;
+    justify-content: space-around;
+    @media (width <= 520px){
+      display: contents;
+    }
+}
+
+div.buttonMercadopago{
+  width: 278px;
+}
